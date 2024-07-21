@@ -9,7 +9,7 @@ function Button({ children, onClick, type }) {
 }
 
 Button.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.string,
   onClick: PropTypes.func,
   type: PropTypes.string,
 };
