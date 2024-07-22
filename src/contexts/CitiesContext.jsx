@@ -36,7 +36,7 @@ function reducer(state, action) {
         ...state,
         isLoading: false,
         currentCity: {},
-        cities: state.cities.filter((city) => city.id !== action.payload),
+        cities: state.cities.filter((city) => city._id !== action.payload),
       };
     case "rejected":
       return {
@@ -101,6 +101,7 @@ function CitiesProvider({ children }) {
         },
       });
       const data = await res.json();
+      console.log(data);
 
       dispatch({ type: "city/created", payload: data });
     } catch {
