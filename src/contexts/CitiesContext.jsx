@@ -1,7 +1,7 @@
 import { createContext, useEffect, useContext, useReducer } from "react";
 import PropTypes from "prop-types";
 
-const BASE_URL = "http://localhost:9000";
+const BASE_URL = "https://crudcrud.com/api/521f8030e5ad4fa8a19b294d30cdbdfd";
 const CitiesContext = createContext();
 
 const initialState = {
